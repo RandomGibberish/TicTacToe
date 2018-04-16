@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222095608527043892}
   - component: {fileID: 114279595605236044}
   - component: {fileID: 114094369815034632}
+  - component: {fileID: 114415453575253948}
   m_Layer: 5
   m_Name: Grid Space
   m_TagString: Untagged
@@ -78,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: 
 --- !u!114 &114094369815034632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +118,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114279595605236044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114415453575253948}
+        m_MethodName: SetSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114279595605236044
@@ -147,6 +159,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114415453575253948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740233720590062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a0f0dbfd6b0404c8b5d3a6fec8e179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 114094369815034632}
+  buttonText: {fileID: 114005071209764770}
+  playerSide: X
 --- !u!222 &222095608527043892
 CanvasRenderer:
   m_ObjectHideFlags: 1
