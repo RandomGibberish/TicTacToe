@@ -6,9 +6,18 @@ using UnityEngine.UI;
 public class GridSpace : MonoBehaviour {
 	public Button button;
 	public Text buttonText;
-	public string playerSide;
-	public void SetSpace (){
-		buttonText.text = playerSide;
+	//public string playerSide;
+	//public void SetSpace (){
+	//	buttonText.text = playerSide;
+	//	button.interactable = false;
+	//}
+	private GameController gameController;
+	public void SetGameControllerReference (GameController controller){
+		gameController = controller;
+	}
+	public void SetSpace(){
+		buttonText.text = gameController.GetPlayerSide ();
 		button.interactable = false;
+		gameController.EndTurn ();
 	}
 }
