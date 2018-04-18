@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.4, a: 1}
+  m_Color: {r: 1, g: 0.818, b: 0.216, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -102,7 +102,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0, g: 0.8, b: 0.8, a: 1}
     m_HighlightedColor: {r: 0, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.2, g: 0.4, b: 0.4, a: 1}
-    m_DisabledColor: {r: 0.21568628, g: 0.25882354, b: 0.3019608, a: 1}
+    m_DisabledColor: {r: 1, g: 0.543, b: 0.167, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -172,7 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 114094369815034632}
   buttonText: {fileID: 114005071209764770}
-  playerSide: X
 --- !u!222 &222095608527043892
 CanvasRenderer:
   m_ObjectHideFlags: 1

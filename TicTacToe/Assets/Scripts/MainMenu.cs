@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class ExampleClass : MonoBehaviour {
+	void Start() {
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
+	}
+}
+
 public class MainMenu : MonoBehaviour {
 
 	public void PlayGame(){
@@ -13,4 +19,5 @@ public class MainMenu : MonoBehaviour {
 		Debug.Log ("Quit!");
 		Application.Quit ();
 	}
+
 }
